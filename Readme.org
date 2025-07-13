@@ -27,8 +27,13 @@ he optional ‘kern’ table specifies how glyph combinations should be kerned. 
 * Usage
 The application uses clap, it can be called with command line arguments
 given we are using cargo:
-'''cargo run set [path/to/font.ttf] [capital height in mm (20.0)] [text to measure]'''
+#+begin_quote
+cargo run set [path/to/font.ttf] [capital height in mm (20.0)] [text to measure]
+#+end_quote
 Input
+
 [[/Images/input.png]]
+
 Output
+
 [[/Images/output.png]]
