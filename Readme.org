@@ -1,7 +1,7 @@
 #+title: Readme
 
 * About
-A script to get the length in mm of a text given a truetype font, capital height in mm and a text string
+A script to get the length in mm of a text given a truetype font, capital height in mm and a text string.
 The script reads the font and gets the needed tables to map the chars of the given string to glyph id's, gets the advancewidths,
 gets the kerning if there is a table like that and the converts the combined width to mm.
 
