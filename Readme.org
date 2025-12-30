@@ -11,18 +11,18 @@ It applies kerning to the glyfs if the kern table is present.
 Instead of using sCapHeight from the OS/2 table, the script calculates y_min and y_max from the char 'H' to get capheight. (a choice because sCapHeight is not always present in the font files)
 
 * Used Fonttables
-- cmap:
-  the cmap table connects for example unicode values of characters to glyph ID's
+- cmap
+  - the cmap table connects for example unicode values of characters to glyph ID's
 - glyf:
-  The ‘glyf’ table contains the data describing each glyph in the font.
-  In the length calculation we use the glyf table combined with Cmap table to find the cap font height of 'H'.
-  We get Y_max and Y_min values to determine the height.
+  - The ‘glyf’ table contains the data describing each glyph in the font.
+    In the length calculation we use the glyf table combined with Cmap table to find the cap font height of 'H'.
+    We get Y_max and Y_min values to determine the height.
 - hmtx:
-  The Horizontal metrix table.
-  The ‘hmtx’ (horizontal metrics) table specifies the advance width and left side bearing for each glyph.
-  We use the advance width of each glyf to calculate the width of a given text.
+  - The Horizontal metrix table.
+    The ‘hmtx’ (horizontal metrics) table specifies the advance width and left side bearing for each glyph.
+    We use the advance width of each glyf to calculate the width of a given text.
 - kern:
-  he optional ‘kern’ table specifies how glyph combinations should be kerned. On Windows the format=0 subtable, the only format which is supported provides simple pair kerning.
+  - he optional ‘kern’ table specifies how glyph combinations should be kerned. On Windows the format=0 subtable, the only format which is supported provides simple pair kerning.
 
 * Usage
 The application uses clap, it can be called with command line arguments
