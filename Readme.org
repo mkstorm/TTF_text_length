@@ -25,8 +25,7 @@ Instead of using sCapHeight from the OS/2 table, the script calculates y_min and
   - he optional ‘kern’ table specifies how glyph combinations should be kerned. On Windows the format=0 subtable, the only format which is supported provides simple pair kerning.
 
 * Usage
-The application uses clap, it can be called with command line arguments
-given we are using cargo:
+The application uses clap, it can be called with command line arguments, example given with cargo:
 #+begin_quote
 cargo run set [path/to/font.ttf] [capital height in mm (20.0)] [text to measure]
 #+end_quote
